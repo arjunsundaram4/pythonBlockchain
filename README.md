@@ -13,8 +13,7 @@ A blockchain is essentially a digital ledger of transactions that is duplicated 
 Clone the project,
 
 ```sh
-$ git clone https://github.com/satwikkansal/python_blockchain_app.git
-```
+$ git clone https://github.com/arjunsundaram4/pythonBlockchain.git
 
 Install the dependencies,
 
