@@ -30,16 +30,16 @@ def fetch_posts():
                 content.append(tx)
 
         global posts
-        posts = sorted(content, key=lambda k: k['timestamp'],
-                       reverse=True)
+        # posts = sorted(content, key=lambda k: k['timestamp'],
+        #                reverse=True)
+        posts=chain["chain"]
 
 
 @app.route('/')
 def index():
     fetch_posts()
     return render_template('index.html',
-                           title='YourNet: Decentralized '
-                                 'content sharing',
+                           title='An Buyer Seller Protocol',
                            posts=posts,
                            node_address=CONNECTED_NODE_ADDRESS,
                            readable_time=timestamp_to_string)
